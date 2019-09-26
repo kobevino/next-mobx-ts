@@ -1,0 +1,19 @@
+@import 'styles/lib/mixins';
+@import 'styles/sprite';
+
+.header {
+  width: 100%;
+  height: 54px;
+  background: #071b32;
+  @include center-align();
+  .ico-logo {
+    display: inline-block;
+    @include retina-sprite($logo-symbol-group);
+    
+    
+  }
+  h1 {
+    font-size: 20px;
+    color: #fff;
+  }
+}
